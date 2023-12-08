@@ -55,6 +55,7 @@ p {
 }
 .header-p-gray {
   color: rgba(255, 255, 255, 0.56);
+  padding: 6px 12px;
 }
 .hero-h1 {
   margin-top: 20px;
@@ -97,12 +98,18 @@ p {
   .menu {
     display: flex;
     justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
   }
   .menu-small {
     display: none;
   }
   .container {
     padding: 56px 130px;
+  }
+  .header {
+    padding: 15px;
   }
   .hero-elems {
     display: grid;
@@ -125,6 +132,9 @@ p {
     font-size: 16px;
     font-weight: 600;
     background-color: white;
+  }
+  .hero-elems {
+    margin-top: 60px;
   }
 }
 
