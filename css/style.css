@@ -1,0 +1,137 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+:root {
+  font-family: sans-serif;
+  color: white;
+  line-height: 145%;
+  background-color: #0A0C0F;
+  --white-color: white;
+}
+h1 {
+  text-shadow: 0px 32px 64px rgba(255, 255, 255, 0.08);
+  font-size: calc(48px + (68 + 68 * 0.7) * ((100vw - 320px) / 1920));
+  font-style: normal;
+  font-weight: 700;
+  max-width: 1180px;
+}
+h2 {
+  font-size: calc(32px + (68 + 68 * 0.7) * ((100vw - 320px) / 1920));
+  font-style: normal;
+  font-weight: 700;
+  max-width: 580px;
+}
+p {
+  color: rgba(255, 255, 255, 0.36);
+  font-size: calc(16px + (10 + 10 * 0.7) * ((100vw - 320px) / 1920));
+  font-style: normal;
+  font-weight: 500;
+  max-width: 580px;
+}
+
+.hero-p-white {
+  color: var(--white-color);
+}
+
+.container {
+  padding: 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0A0C0FCC;
+  border-bottom: solid 4px #151517;
+  background-color: #0e0e10;
+  padding: 10px 20px;
+}
+.menu-big {
+  display: none;
+}
+.menu {
+}
+.header-p-gray {
+  color: rgba(255, 255, 255, 0.56);
+}
+.hero-h1 {
+  margin-top: 20px;
+}
+.hero-img1 {
+  margin-top: 40px;
+  max-width: 80%;
+}
+.hero-h2 {
+  margin-top: 24px;
+}
+.hero-p {
+  margin-top: 12px;
+}
+.hero-img2 {
+  max-width: 130%;
+  margin-top: -40%;
+  margin-bottom: -17%;
+  position: relative;
+  left: -20%;
+}
+.hero-button {
+  margin-top: 40px;
+  padding: 12px 20px;
+  min-width: 320px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  border: none;
+  font-size: calc(16px + (10 + 10 * 0.7) * ((100vw - 320px) / 1920));
+  font-style: normal;
+  font-weight: 600;
+  background-color: white;
+}
+
+@media screen and (min-width: 500px) {
+  .menu-big {
+    display: initial;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-small {
+    display: none;
+  }
+  .container {
+    padding: 56px 130px;
+  }
+  .hero-elems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-img1 {
+    max-width: 100%;
+  }
+  .hero-img2 {
+    max-width: 150%;
+  }
+  .hero-button {
+    margin-top: 40px;
+    padding: 24px 48px;
+    max-width: 251px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 892px) {
+  
+}
+
+@media screen and (min-width: 1440px) {
+  
+}
